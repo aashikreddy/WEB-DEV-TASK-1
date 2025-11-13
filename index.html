@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Landing — Clean & Responsive</title>
+    <meta
+      name="description"
+      content="A clean, responsive landing page built with HTML5 and CSS3 (Flexbox & Grid, media queries)."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="Homepage">
+          <!-- simple svg logo -->
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <rect
+              x="2"
+              y="2"
+              width="20"
+              height="20"
+              rx="4"
+              fill="currentColor"
+            />
+          </svg>
+          <span>BrandName</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <button
+            class="nav-toggle"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="hamburger"></span>
+          </button>
+
+          <ul id="primary-nav" class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how">How it Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a class="btn-outline" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Build beautiful, responsive websites — fast.
+            </h1>
+            <p class="hero-sub">
+              A clean landing page template demonstrating semantic HTML, CSS
+              Grid & Flexbox, and responsive patterns that work on any device.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn-primary" href="#features">Get Started</a>
+              <a class="btn-ghost" href="#how">Learn More</a>
+            </div>
+            <ul class="hero-badges" aria-hidden="true">
+              <li>SEO-friendly</li>
+              <li>Accessible</li>
+              <li>Responsive</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <!-- decorative card mockup -->
+            <div class="card-mockup">
+              <div class="mockup-header"></div>
+              <div class="mockup-body">
+                <div class="mockup-line"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-grid">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section container features">
+        <h2 class="section-title">Key features</h2>
+        <p class="section-intro">What this starter landing page demonstrates</p>
+
+        <div class="features-grid" role="list">
+          <article class="feature" role="listitem">
+            <h3>Semantic HTML</h3>
+            <p>
+              Clear document structure using header, main, section and footer
+              elements for better accessibility and SEO.
+            </p>
+          </article>
+
+          <article class="feature" role="listitem">
+            <h3>Responsive Layout</h3>
+            <p>
+              Layouts built with Flexbox and CSS Grid that adapt smoothly across
+              desktop, tablet and mobile.
+            </p>
+          </article>
+
+          <article class="feature" role="listitem">
+            <h3>Performance-minded</h3>
+            <p>
+              Minimal CSS and no external libraries to keep load times fast.
+            </p>
+          </article>
+
+          <article class="feature" role="listitem">
+            <h3>Accessible Interactions</h3>
+            <p>
+              Keyboard focus states, skip link, and ARIA attributes for improved
+              usability.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section how container">
+        <h2 class="section-title">How it works</h2>
+        <div class="how-grid">
+          <div>
+            <h4>1. Structure</h4>
+            <p>Organize content with semantic tags and meaningful headings.</p>
+          </div>
+          <div>
+            <h4>2. Layout</h4>
+            <p>
+              Use Flexbox for small components and Grid for overall page layout
+              when needed.
+            </p>
+          </div>
+          <div>
+            <h4>3. Responsive</h4>
+            <p>
+              Apply media queries to adjust typography, spacing and navigation
+              on different screen sizes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing container">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">Free</p>
+            <ul>
+              <li>Starter templates</li>
+              <li>Community support</li>
+            </ul>
+            <a class="btn-primary" href="#contact">Choose</a>
+          </div>
+
+          <div class="price-card featured">
+            <h3>Pro</h3>
+            <p class="price">₹499 / month</p>
+            <ul>
+              <li>Advanced components</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn-primary" href="#contact">Choose</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Custom integrations</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a class="btn-outline" href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">Have questions? Reach out.</p>
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+          onsubmit="return false;"
+        >
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <div>
+            <button class="btn-primary" type="submit">Send message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> BrandName — Built with HTML &amp; CSS</p>
+        <ul class="social">
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="GitHub">GitHub</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      // Accessibility helpers and small nav toggle
+      (function () {
+        // update year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const navToggle = document.querySelector(".nav-toggle");
+        const navList = document.getElementById("primary-nav");
+
+        navToggle.addEventListener("click", function () {
+          const expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", String(!expanded));
+          navList.classList.toggle("open");
+        });
+
+        // close mobile menu when clicking a link
+        navList.addEventListener("click", function (e) {
+          if (e.target.tagName === "A" && navList.classList.contains("open")) {
+            navList.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
